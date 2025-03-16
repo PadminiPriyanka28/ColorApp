@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/PadminiPriyanka28/PROG8840.git'
+                git branch: 'main', url: 'https://github.com/PadminiPriyanka28/ColorApp.git'
             }
         }
 
@@ -39,12 +39,12 @@ pipeline {
 
     post {
         success {
-            mail to: 'your-college-email@example.com',
+            mail to: 'poreddyppriyanka@gmail.com',
                  subject: "Jenkins Build Success",
                  body: "The build was successful."
         }
         failure {
-            mail to: 'your-college-email@example.com',
+            mail to: 'poreddyppriyanka@gmail.com',
                  subject: "Jenkins Build Failed",
                  body: "The build has failed. Please check Jenkins logs."
         }
