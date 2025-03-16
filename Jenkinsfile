@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'echo "Building the application..."'
+                    bat 'echo "Building the application..."'
                 }
             }
         }
@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh 'echo "Running tests..."'
+                    bat 'echo "Running tests..."'
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
         stage('Deploy (Optional)') {
             steps {
                 script {
-                    sh 'echo "Deploying application..."'
+                    bat 'echo "Deploying application..."'
                 }
             }
         }
